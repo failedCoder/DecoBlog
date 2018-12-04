@@ -3,3 +3,16 @@
 @import "base/variables.scss";
 @import "base/mixins.scss";
 
+body {
+    background: $dark;
+    background: -moz-linear-gradient(top, $dark 25%, $light 25%);
+    background: -webkit-linear-gradient(top, $dark 25%,$light 25%);
+    background: linear-gradient(to bottom, $dark 25%,$light 25%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
