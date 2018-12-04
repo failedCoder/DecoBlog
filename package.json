@@ -9,6 +9,7 @@
   "author": "Petar",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^4.1.3",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
