@@ -31,22 +31,61 @@
                         <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Contact"><i class="fas fa-address-card"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+                        <a href="#loginModal" class="nav-link" data-toggle="modal"><i class="fas fa-sign-in-alt"></i></a>
                     </li>
                 </ul>    
             </div>
         </nav>
+
 
     </div>
 
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
     <script type="text/javascript" src="dist/js/script.min.js"></script>
     <script>
         $(document).ready(function () {
             App.init();
         });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
     </script>
 </body>
 </html>
+
+<form id="loginForm" novalidate>
+    <div class="modal" tabindex="-1" role="dialog" id="loginModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Remember me</label>
+                    </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

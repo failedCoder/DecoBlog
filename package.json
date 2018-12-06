@@ -15,7 +15,8 @@
     "gulp-cli": "^2.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "parsleyjs": "^2.8.1"
   },
   "dependencies": {
     "jquery": "^3.3.1"
