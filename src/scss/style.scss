@@ -16,3 +16,24 @@ body {
 .bg-dark {
     background-color: $dark !important;
 }
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-nav {
+        .nav-item {
+            &:last-child {
+                .nav-link {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.jumbotron {
+    background: url("/img/header.jpg") no-repeat center center;
+    background-size: cover;
+    color: $light;
+}
