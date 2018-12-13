@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    font-size: 12px;
 }
 
 .bg-dark {
@@ -40,4 +41,8 @@ body {
 
 .card-img-top {
     height: 40%;
+}
+
+.footer-nav {
+    background-color: #17191c !important;
 }
