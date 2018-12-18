@@ -3,7 +3,7 @@
 @import "base/variables.scss";
 @import "base/mixins.scss";
 
-body {
+#index{
     background: $dark;
     background: -moz-linear-gradient(top, $dark 25%, $light 25%);
     background: -webkit-linear-gradient(top, $dark 25%,$light 25%);
@@ -14,15 +14,19 @@ body {
     font-size: 12px;
 }
 
+#about {
+    font-size: 14px;
+    background-color: #f9f9fb;
+}
+
 .bg-dark {
     background-color: $dark !important;
 }
 
 .navbar {
-    padding-left: 0;
-    padding-right: 0;
+   
 
-    .navbar-nav {
+    #indexNav {
         .nav-item {
             &:last-child {
                 .nav-link {
@@ -45,4 +49,8 @@ body {
 
 .footer-nav {
     background-color: #17191c !important;
+}
+
+.light{
+    background-color: white !important;
 }
